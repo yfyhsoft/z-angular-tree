@@ -415,7 +415,7 @@ angular
                     $isFirst:scope.$first,
                     $isLast:scope.$last,
                     $isMiddle:scope.$middle,
-                    $collapsed:scope.node.children.length===0?true:rootScope.options.defaultCollapsed,
+                    $collapsed:scope.node[rootScope.options.childrenField].length===0?true:rootScope.options.defaultCollapsed,
                     $hasSelect:false,
                     $selected:false,
                     $nodeLevel:scope.$parent.$parent.$model?scope.$parent.$model.$nodeLevel+1:1//如果有$model则代表不是根节点
